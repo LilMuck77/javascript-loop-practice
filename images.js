@@ -15,13 +15,20 @@ $(document).ready(function () {
         $("#do-while-num").text(num - 1);
         $("#for-num").text(num);
 
-
+        var k = 0;
         /*
          Create a while loop that runs "num + 1" times.
 
          The body of the loop should contain the statement:
          addImageToDiv("#while-loop");
         */
+        while (num + 1 > k ){
+
+            k++;
+            addImageToDiv("#while-loop");
+
+
+        }
 
 
 
@@ -33,6 +40,15 @@ $(document).ready(function () {
          The body of the loop should contain the statement:
          addImageToDiv("#do-while-loop");
         */
+        var j=0;
+        do{
+
+            addImageToDiv("#do-while-loop");
+            j++;
+
+        }
+        while(j <num-1);
+
 
 
 
@@ -44,7 +60,9 @@ $(document).ready(function () {
          The body of the loop should contain the statement:
          addImageToDiv("#for-loop");
         */
-
+        for(var i = 0; i<num;i++){
+            addImageToDiv("#for-loop");
+        }
 
 
 
