@@ -60,6 +60,13 @@ function runWhileLoop() {
 
         (Or for a challenge, concatenate the first "number" letters of the alphabet!)
     */
+    var i = 0;
+    while(i<number){
+        output += "A";
+        i++;
+
+    }
+
 
 
     $("#while-result").text(output);
@@ -74,6 +81,10 @@ function runForLoop() {
         Use a for loop to add the numbers 1 through "number"
         into the variable "sum".
     */
+    for(var i = 0; i <number; i++){
+
+        sum += number;
+    }
 
     $("#for-result").text(sum);
 }
@@ -89,6 +100,14 @@ function runDoWhileLoop() {
         is 5, then output should be "12345".
     */
 
+
+    var i = 1;
+
+    do{
+        output += i;
+        i++;
+    }
+    while(i<number + 1);
 
     $("#do-while-result").text(output);
 }
